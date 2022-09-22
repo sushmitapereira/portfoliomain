@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushmita Pereira Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e386111887.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="Sushmita (1).png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <h1><span style="color: rgb(245,154, 95) ;">Hey, I'm Sushmita</span></h1><br>
+                <p>Web Developer from Karnataka,India.<br>I enjoy building websites.If you are 
+                an employer looking to hire, <br> you can get in touch with me.</p>
+            </div>
+        </div>
+
+    </div>
+   <!-----------about--------->
+   <div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="about.png" class="coffee" >
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-titile">About Me</h1>
+                <p><br>My name is Sushmita,Im from mangalore. I did my B.Tech in computer science and<br> 
+                   engineering and then followed by M.Tech in computer science and engineering.<br>
+                   I currently work for Iclick advertising pvt ltd as a javascript web developer. 
+                    </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links"  onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li>Web Development</li>
+                    <li>Wordpress Developer</li>
+                    <li>Html,CSS,Javascript,C Programming,React Native</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li>IClick Advertising Pvt. Ltd., Javascript Web Developer: Duration: June 2021 to present
+                    </li>
+                    <li>Whitehat Jr, JavaScript Instructor: Duration: September 2020 to present</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents"  id="Education">
+                <ul>
+                    <li>M.Tech in Computer Science and Engineering : June 2019 to June 2021</li>
+                    <li>B.Tech in Computer Science and Engineering : June 2014 to June 2018</li>
+                  
+                </ul>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------services--------->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-titile">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <a href="#">Learn more</a>
+            </div>
+
+           
+
+        </div>
+    </div>
+</div>
+<!---------Portfolio---------->
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-titile">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="perfumeseries.gif" class="perfume">
+                <div class="layer">
+                    <h3>
+                        E-Commerce Website
+                    </h3>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----contact--------------------->
+<div class="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sushmitapereira456@gmail.com</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p><i class="fa-solid fa-phone"></i>9449502650</p>
+            <a href="resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Sushmita Pereira</p>
+</div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname)
+{
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+   
+
+</body>
+</html>
